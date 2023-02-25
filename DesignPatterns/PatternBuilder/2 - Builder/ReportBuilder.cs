@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PatternBuilder.Produto;
 
-namespace PatternBuilder
+namespace PatternBuilder.Builder
 {
     public abstract class ReportBuilder
     {

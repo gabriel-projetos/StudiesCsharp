@@ -1,4 +1,7 @@
-﻿using System.Numerics;
+﻿using PatternBuilder.ConcreteBuilder;
+using PatternBuilder.Director;
+using PatternBuilder.Produto;
+using System.Numerics;
 
 namespace PatternBuilder
 {
@@ -18,7 +21,24 @@ namespace PatternBuilder
         //Passo 4 : Classe Director: é a classe que define a ordem em que os métodos da interface IBuilder serão chamados para construir o objeto complexo.Ela recebe um objeto ConcreteBuilder e utiliza seus métodos para construir o objeto.
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            // Client Code
+            Report report;
+            ReportDirector reportDirector = new ReportDirector();
+            
+            // Construct and display Reports
+            PDFReport pdfReport = new PDFReport();
+            report = reportDirector.MakeReport(pdfReport);
+            report.DisplayReport();
+            
+            
+            Console.WriteLine("-------------------");
+
+            
+            ExcelReport excelReport = new ExcelReport();
+            report = reportDirector.MakeReport(excelReport);
+            report.DisplayReport();
+
+            Console.ReadKey();
         }
     }
 }
