@@ -1,7 +1,6 @@
 ﻿using PatternBuilder.ConcreteBuilder;
 using PatternBuilder.Director;
 using PatternBuilder.Produto;
-using System.Numerics;
 
 namespace PatternBuilder
 {
@@ -30,10 +29,8 @@ namespace PatternBuilder
             report = reportDirector.MakeReport(pdfReport);
             report.DisplayReport();
             
-            
             Console.WriteLine("-------------------");
 
-            
             ExcelReport excelReport = new ExcelReport();
             report = reportDirector.MakeReport(excelReport);
             report.DisplayReport();

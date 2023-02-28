@@ -7,4 +7,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Client\" />
+    <Folder Include="Creator\" />
+    <Folder Include="ConcretCreator\" />
+    <Folder Include="ConcretProduct\" />
+    <Folder Include="Product\" />
+  </ItemGroup>
+
 </Project>
