@@ -29,7 +29,7 @@ namespace PatternBuilder
             report = reportDirector.MakeReport(pdfReport);
             report.DisplayReport();
             
-            Console.WriteLine("-------------------");
+            Console.WriteLine("-----------------");
 
             ExcelReport excelReport = new ExcelReport();
             report = reportDirector.MakeReport(excelReport);
