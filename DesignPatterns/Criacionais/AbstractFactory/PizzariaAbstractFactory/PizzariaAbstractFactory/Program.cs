@@ -28,5 +28,5 @@ static void ExibeDetalhes(MassaBase massaBase)
     Console.WriteLine($"Tipo : {massaBase.TipoMassa}");
     Console.WriteLine(massaBase.Nome);
     Console.WriteLine(massaBase.Ingredientes[0].ToString());
-    Console.WriteLine("\n");
+    Console.WriteLine("\nn");
 }
